@@ -100,7 +100,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
   
   if(hijoIzq==NULL && hijoDer==NULL)
   {
-    if(tree->lower_than(node->pair->key,parent->pair->key)==1)
+    if(tree->lower_than(node->pair->key,padre->pair->key)==1)
     {
       parent->left=NULL;
     }
