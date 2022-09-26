@@ -25,3 +25,14 @@ Mon 26 Sep 2022 09:24:11 PM UTC:
  tests:  6|6
 total_score: 15/70
 6a8b91b
+Mon 26 Sep 2022 09:26:39 PM UTC: 
+ treemap.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘minimum’:
+treemap.c:91:17: error: ‘left’ undeclared (first use in this function)
+   91 |         aux=aux-left;
+      |                 ^~~~
+treemap.c:91:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+41ed408
