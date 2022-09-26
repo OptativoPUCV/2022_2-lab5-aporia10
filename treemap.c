@@ -200,7 +200,7 @@ Pair * nextTreeMap(TreeMap * tree) {
   {
     tree->current=tree->current->parent;
   }
-  else if(tree->current.>parent->parent==NULL)
+  else if(tree->current->parent->parent==NULL)
   {
     tree->current=NULL;
     return NULL;
