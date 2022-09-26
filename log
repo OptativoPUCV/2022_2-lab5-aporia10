@@ -76,3 +76,19 @@ treemap.c:97:12: error: unused variable ‘padre’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 dd166ec
+Mon 26 Sep 2022 09:38:43 PM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:120:20: error: implicit declaration of function ‘minimun’; did you mean ‘minimum’? [-Werror=implicit-function-declaration]
+  120 |       TreeNode*min=minimun(hijoDer);
+      |                    ^~~~~~~
+      |                    minimum
+treemap.c:120:20: error: initialization of ‘TreeNode *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+treemap.c:128:3: error: ‘else’ without a previous ‘if’
+  128 |   else
+      |   ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+c88393c
