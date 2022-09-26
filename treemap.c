@@ -94,7 +94,7 @@ TreeNode * minimum(TreeNode * x){
 }
 
 void removeNode(TreeMap * tree, TreeNode* node) {
-  TreeNode*parent=node->parent;
+  TreeNode*padre=node->parent;
   TreeNode*hijoIzq=node->left;
   TreeNode*hijoDer=node->right;
   
@@ -117,7 +117,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
   {
     if(hijoIzq==NULL && hijoDer==NULL)
     {
-      TreeNode*min=minimun(hijoDer);
+      TreeNode*min=minimum(hijoDer);
       node->pair=min->pair;
       if(min->right!=NULL)
       {
