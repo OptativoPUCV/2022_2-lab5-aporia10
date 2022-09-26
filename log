@@ -53,3 +53,26 @@ Mon 26 Sep 2022 09:27:03 PM UTC:
  tests:  8|5
 total_score: 15/70
 e8dd803
+Mon 26 Sep 2022 09:38:25 PM UTC: 
+ treemap.c | 47 ++++++++++++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 46 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:103:41: error: ‘parent’ undeclared (first use in this function)
+  103 |     if(tree->lower_than(node->pair->key,parent->pair->key)==1)
+      |                                         ^~~~~~
+treemap.c:103:41: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:120:20: error: implicit declaration of function ‘minimun’; did you mean ‘minimum’? [-Werror=implicit-function-declaration]
+  120 |       TreeNode*min=minimun(hijoDer);
+      |                    ^~~~~~~
+      |                    minimum
+treemap.c:120:20: error: initialization of ‘TreeNode *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+treemap.c:128:3: error: ‘else’ without a previous ‘if’
+  128 |   else
+      |   ^~~~
+treemap.c:97:12: error: unused variable ‘padre’ [-Werror=unused-variable]
+   97 |   TreeNode*padre=node->parent;
+      |            ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+dd166ec
